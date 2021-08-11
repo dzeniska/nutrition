@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Nutrition</string>
+    <string name="calories_goal">Calories Goal:</string>
+    <string name="calories_goal_result">1450 kcal</string>
+    <string name="eating">Eating:</string>
+    <string name="eating_result">0 kcal</string>
+    <string name="burnt">Burnt:</string>
+    <string name="burnt_total">90 kcal</string>
+    <string name="total">Total:</string>
+    <string name="total_res">308</string>
+    <string name="kcal">kcal</string>
+
+    <!--Buttons text-->
+    <string name="clock">00:00 pm</string>
+    <string name="breacfast">BREACFAST</string>
+    <string name="lunch">LUNCH</string>
+    <string name="dinner">DINNER</string>
+    <string name="b_kcal">0</string>
+</resources>
