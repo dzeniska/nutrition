@@ -57,8 +57,6 @@ class MainActivity : AppCompatActivity() {
             imageButton2.setOnClickListener(onCLick())
             imageButton3.setOnClickListener(onCLick())
 
-
-
             listViewButtons.add(imageButton)
             listViewButtons.add(imageButton2)
             listViewButtons.add(imageButton3)
