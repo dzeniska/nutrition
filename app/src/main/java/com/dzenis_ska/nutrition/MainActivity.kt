@@ -157,7 +157,7 @@ class MainActivity : AppCompatActivity() {
         viewCl.translationY = 0.0f
 
 
-        //тут косяк с alpha
+        //тут косяк с alpha значением
 
 //        var alpha = 1.0f
 //        for (i in 5 downTo 0) {
