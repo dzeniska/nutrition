@@ -37,11 +37,11 @@ android {
     buildFeatures{
         viewBinding true
     }
-    allprojects {
+    /*allprojects {
         repositories {
             maven { url "https://jitpack.io" }
         }
-    }
+    }*/
 
 }
 
@@ -52,6 +52,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation project(path: ':graphview')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -60,6 +61,6 @@ dependencies {
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
 
-    implementation 'com.github.swapnil1104:CurveGraphView:1.1.3'
+//    implementation 'com.github.swapnil1104:CurveGraphView:1.1.3'
 
 }

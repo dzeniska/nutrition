@@ -1,2 +1,3 @@
 rootProject.name = "Nutrition"
 include ':app'
+include ':graphview'

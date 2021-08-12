@@ -338,60 +338,63 @@ class MainActivity : AppCompatActivity() {
             addPoint(7, 0)
         }
 
-        val listGrapf = arrayListOf<GraphData>()
-        for(i in -7..7){
-            Log.d("!!!", "${i}")
-            listGrapf.add(pointNextMap(i, v1.plus(i), v2.plus(i), v3.plus(i)))
-        }
+//        val listGrapf = arrayListOf<GraphData>()
+//        for(i in -7..7){
+//            Log.d("!!!", "${i}")
+//            listGrapf.add(pointNextMap(i, v1.plus(i), v2.plus(i), v3.plus(i)))
+//        }
 
         val gd: GraphData = GraphData.builder(this)
             .setPointMap(pointMap)
-            .setGraphStroke(R.color.invisible)
+            .setGraphStroke(R.color.bir)
             .setPointColor(R.color.black)
             .setPointRadius(5)
             .build()
-        listGrapf.add(gd)
+//        listGrapf.add(gd)
 
-        curveGraphView!!.setData(7, 1000,
-            listGrapf[0],
-            listGrapf[1],
-            listGrapf[2],
-            listGrapf[3],
-            listGrapf[4],
-            listGrapf[5],
-            listGrapf[6],
-            listGrapf[7],
-            listGrapf[8],
-            listGrapf[9],
-            listGrapf[10],
-            listGrapf[11],
-            listGrapf[12],
-            listGrapf[13],
-            listGrapf[14],
-            listGrapf[15]
-        )
+
+        curveGraphView!!.setData(7, 1000, gd)
+
+//        curveGraphView!!.setData(7, 1000,
+//            listGrapf[0],
+//            listGrapf[1],
+//            listGrapf[2],
+//            listGrapf[3],
+//            listGrapf[4],
+//            listGrapf[5],
+//            listGrapf[6],
+//            listGrapf[7],
+//            listGrapf[8],
+//            listGrapf[9],
+//            listGrapf[10],
+//            listGrapf[11],
+//            listGrapf[12],
+//            listGrapf[13],
+//            listGrapf[14],
+//            listGrapf[15]
+//        )
     }
 
-    private fun pointNextMap(v0: Int, v1: Int, v2: Int, v3: Int): GraphData {
-        val pointMap2 = PointMap()
-        pointMap2.apply {
-            addPoint(0, v0)
-            addPoint(2, v1)
-            addPoint(3, v0)
-            addPoint(4, v2)
-            addPoint(5, v0)
-            addPoint(6, v3)
-            addPoint(7, v0)
-        }
-        val gd2: GraphData = GraphData.builder(this)
-            .setPointMap(pointMap2)
-            .setGraphStroke(R.color.bir)
-            .setPointColor(R.color.invisible)
-            .setPointRadius(0)
-            .build()
-        return gd2
-
-    }
+//    private fun pointNextMap(v0: Int, v1: Int, v2: Int, v3: Int): GraphData {
+//        val pointMap2 = PointMap()
+//        pointMap2.apply {
+//            addPoint(0, v0)
+//            addPoint(2, v1)
+//            addPoint(3, v0)
+//            addPoint(4, v2)
+//            addPoint(5, v0)
+//            addPoint(6, v3)
+//            addPoint(7, v0)
+//        }
+//        val gd2: GraphData = GraphData.builder(this)
+//            .setPointMap(pointMap2)
+//            .setGraphStroke(R.color.bir)
+//            .setPointColor(R.color.invisible)
+//            .setPointRadius(0)
+//            .build()
+//        return gd2
+//
+//    }
 
     companion object {
         const val MAX_HEIGHT = 500
